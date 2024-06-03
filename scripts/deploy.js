@@ -5,7 +5,7 @@ async function main() {
   const contract = await crowdFunding.deploy(); //instance of contract
 
   await contract.deployed()
-  console.log("Address of contract:", contract.address);
+  // console.log("Address of contract:", contract.address);
 }
 main().catch((error) => {
   console.error(error);

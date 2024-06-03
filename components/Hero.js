@@ -10,10 +10,11 @@ export default function Hero({ titleData, createCampaign }) {
   });
 
   const createNewCampaign = async (e) => {
-    console.log("hi");
+    
     e.preventDefault();
+    // console.log("hi");
     try {
-      console.log("hi");
+      // console.log("hi");
       const data = await createCampaign(campaign);
     } catch (error) {
       console.log(error);

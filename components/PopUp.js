@@ -9,7 +9,7 @@ export default function PopUp({setOpenModel,getDonations,donate,donateFunction})
     const createDonation = async () => {
         try {
             const data = await donateFunction(donate.pId,amount);
-            console.log(data);
+            // console.log(data);
         } catch (error) {
             console.log(error);
         }

@@ -25,7 +25,7 @@ export const CrowdFundingProvider = ({children}) => {
         const signer = provider.getSigner();
         const contract = fetchContract(signer);
 
-        console.log(currentAccount);
+        // console.log(currentAccount);
         try {
             const transaction = await contract.createCampaign(
                 currentAccount,
@@ -36,9 +36,9 @@ export const CrowdFundingProvider = ({children}) => {
             );
 
             await transaction.wait();
-            console.log("contract call success", transaction);
+            // console.log("contract call success", transaction);
         } catch (error) {
-            console.log("contract call failure", error);
+            // console.log("contract call failure", error);
         }
     };
     
@@ -123,22 +123,22 @@ export const CrowdFundingProvider = ({children}) => {
     const checkIfWalletConnected = async () => {
         try {
             if(!window.ethereum){
-                console.log("hi");
+                // console.log("hi");
                 return setOpenError(true), setError("Install MetaMask");
             }
 
             const accounts = await window.ethereum.request({method:"eth_accounts"});
 
             if(accounts.length){
-                console.log(accounts[0]);
+                // console.log(accounts[0]);
                 setCurrentAccount(accounts[0]);
             }
             else{
-                console.log("no account found");
+                // console.log("no account found");
             }
 
         } catch (error) {
-            console.log("something wrong while connecitng to wallet");
+            // console.log("something wrong while connecitng to wallet");
         }
     }
 
@@ -148,7 +148,8 @@ export const CrowdFundingProvider = ({children}) => {
     
     const connectWallet = async (campaign) => {
         try {
-            if(!window.ethereum) return console.log("Install Metamask");
+            if(!window.ethereum) return 
+            // console.log("Install Metamask");
 
             const accounts = await window.ethereum.request({
                 method:"eth_requestAccounts"
