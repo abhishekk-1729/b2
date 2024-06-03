@@ -4,7 +4,7 @@ import Image from "next/image";
 import "./globals.css";
 import Head from "next/head";
 import Footer from "../../components/Footer"
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 import { CrowdFundingProvider } from "../../context/CrowdFunding";
 
 const inter = Inter({ subsets: ["latin"] });
