@@ -14,13 +14,13 @@ export default function page() {
   const dropdownRef = useRef(null);
   const {isVisible,setIsVisible,currentAccount} = useContext(CrowdFundingContext);
   
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setIsVisible(false);
-    }
-  };
+  // const handleClickOutside = (event) => {
+  //   if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+  //     setIsVisible(false);
+  //   }
+  // };
 
-  document.addEventListener('mousedown', handleClickOutside);
+  // document.addEventListener('mousedown', handleClickOutside);
 
   const {
             titleData,
