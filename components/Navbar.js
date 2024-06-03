@@ -26,7 +26,7 @@ export default function Navbar() {
                     title = "Company"
                     className="inline-flex items-center mr-8"
                 >
-                    <Logo/>
+                    {/* <Logo/> */}
                     <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
                         <img src="/saathi-logo.jpg" height="40px" width="80px" alt="" />
 
@@ -89,7 +89,7 @@ export default function Navbar() {
                     onClick={()=>setIsMenuOpen(true)}
 
                 >
-                    <Menu/>
+                    {/* <Menu/> */}
 
                 </button>
                 {isMenuOpen && (
