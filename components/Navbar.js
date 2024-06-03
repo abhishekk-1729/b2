@@ -1,8 +1,8 @@
 "use client";
 import { useContext, useState } from "react";
 import React from 'react'
-import Logo from "./Logo";
-import Menu from "./Menu";
+// import Logo from "./Logo";
+// import Menu from "./Menu";
 import { CrowdFundingContext } from "../context/CrowdFunding";
 import Link from "next/link";
 
